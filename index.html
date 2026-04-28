@@ -1,1 +1,31 @@
-<h1> hello ar </h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AR Working</title>
+
+  <!-- A-Frame -->
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+
+  <!-- ✅ Updated AR.js (important fix) -->
+  <script src="https://cdn.jsdelivr.net/npm/ar.js@3.4.5/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body style="margin:0; overflow:hidden;">
+
+  <a-scene embedded arjs>
+
+    <!-- Marker -->
+    <a-marker preset="hiro">
+
+      <!-- Object -->
+      <a-box position="0 0.5 0" material="color: red;"></a-box>
+
+    </a-marker>
+
+    <!-- Camera -->
+    <a-entity camera></a-entity>
+
+  </a-scene>
+
+</body>
+</html>
